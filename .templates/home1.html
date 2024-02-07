@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forecast Traffic Accidents</title>
+    <style>
+        body, h1, p, input, button {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: #ff758c;
+            font-size: 16px;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 920px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .left-section {
+            width: 60%;
+            padding: 30px;
+        }
+
+        .left-section h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+            color: #333;
+        }
+
+        .left-section p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .right-section {
+            width: 40%;
+            background-color: #f0f2f5;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 1em;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: .5em;
+            color: #333;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 1em;
+        }
+
+        .btn {
+            width: 100%;
+            background-color: #ff7eb3;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #ff659e;
+        }
+
+        .terms {
+            font-size: 0.9em;
+            color: #666;
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>Traffic Accident Forecasting</h1>
+            <p>Click and Witness! Experience the magic as my model predicts for the Category Alkoholunfalle and Accident Type insgesamt.</p>
+        </div>
+        <div class="right-section">
+            <div class="form-group">
+                <label for="year">Year:</label>
+                <input type="text" id="year" placeholder="Enter the year">
+            </div>
+            <div class="form-group">
+                <label for="month">Month:</label>
+                <input type="text" id="month" placeholder="Enter the month (1-12)">
+            </div>
+            <button class="btn" onclick="forecast()">Click to Forecast</button>
+            <div id="prediction-placeholder"></div>
+
+        </div>
+    </div>
+
+    <script>
+    function forecast() {
+        const year = document.getElementById('year').value;
+        const month = document.getElementById('month').value;
+        if (month < 1 || month > 12) {
+            alert('Invalid month. Please enter a value between 1 and 12.');
+            return;
+        }
+        const requestBody = {
+            year: year,
+            month: month
+        };
+        fetch('/forecast', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(requestBody)
+        })
+        .then(response => response.json())
+        .then(data => {
+            const predictionPlaceholder = document.getElementById('prediction-placeholder');
+            predictionPlaceholder.innerHTML = `<br><p style="background-color: #ff7eb3; color: white; padding: 15px; border-radius: 5px; text-align: center;">Prediction: ${data.prediction}</p>`;
+        })
+        .catch(error => console.error("Error:", error));
+    }
+</script>
+
+</body>
+</html>
