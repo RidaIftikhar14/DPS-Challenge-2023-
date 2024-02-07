@@ -8,7 +8,7 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error
 import pickle
 
 # Load the saved model and transformer with pickle
-with open('E:/DPS Challenge/dps_model_and_transformer.pkl', 'rb') as file:
+with open('dps_model_and_transformer.pkl', 'rb') as file:
     saved_objects = pickle.load(file)
     model = saved_objects['model']
     preprocessor = saved_objects['transformer']
