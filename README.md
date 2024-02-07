@@ -40,7 +40,7 @@ The application forecasts the values for:
 Category: 'Alkoholunfälle'
 Type: 'insgesamt
 
-#Packages
+# Packages
 The application uses the following packages
 1. pandas
 2. numpy
@@ -49,12 +49,14 @@ The application uses the following packages
 5. pickle
 6. Flask
 
-#Files
+# Files
 [Training Model.ipynb](https://github.com/RidaIftikhar14/DPS-Challenge-2023-/blob/main/Training%20Model.ipynb): The notebook contains all the steps performed to create and train the AI Model.
-[Training Model.ipynb](https://github.com/RidaIftikhar14/DPS-Challenge-2023-/blob/main/app.py): An application which performs the forecasting and returns the result. 
+[app.py](https://github.com/RidaIftikhar14/DPS-Challenge-2023-/blob/main/app.py): An application which performs the forecasting and returns the result. 
 submit.py: a script to make the post to the endpoint.
 
-#Visualization
+# Visualization
 ![Trend of accidents by category](https://github.com/RidaIftikhar14/DPS-Challenge-2023-/assets/122225638/943e93cd-c92c-49ae-abea-f8e06aa4e1a1)
+
 ![Number of accidents per category](https://github.com/RidaIftikhar14/DPS-Challenge-2023-/assets/122225638/b7ef9d38-1954-4bcd-be61-aa0d3e9104be)
+
 ![Trend of accidents by category](https://github.com/RidaIftikhar14/DPS-Challenge-2023-/assets/122225638/ace7424e-f6c3-4b67-aa6b-d77ccc418169)
