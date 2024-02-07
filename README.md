@@ -50,9 +50,9 @@ The application uses the following packages
 6. flask
 
 # Files
-- **[Training Model.ipynb](https://github.com/RidaIftikhar14/DPS-Challenge-2023-/blob/main/Model%20Training.ipynb): The notebook contains all the steps performed to create and train the AI Model.
-- **[app.py](https://github.com/RidaIftikhar14/DPS-Challenge-2023-/blob/main/app.py): An application which performs the forecasting and returns the result. 
-- **submit.py: a script to make the post to the endpoint.
+- [Training Model.ipynb](https://github.com/RidaIftikhar14/DPS-Challenge-2023-/blob/main/Model%20Training.ipynb): The notebook contains all the steps performed to create and train the AI Model.
+- [app.py](https://github.com/RidaIftikhar14/DPS-Challenge-2023-/blob/main/app.py): An application which performs the forecasting and returns the result. 
+- submit.py: a script to make the post to the endpoint.
 
 # Visualization
 ![Trend of accidents by category](https://github.com/RidaIftikhar14/DPS-Challenge-2023-/assets/122225638/943e93cd-c92c-49ae-abea-f8e06aa4e1a1)
