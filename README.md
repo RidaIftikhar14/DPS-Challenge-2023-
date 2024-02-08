@@ -10,7 +10,7 @@ This challenge consists of 3 tasks.
 - **Mission 3:** Sending the URL of the task
 
 ## API
-The app is deployed on Heroku: [DPS App](https://dps-app-bc8e6add69ac.herokuapp.com/)
+The app is deployed on Heroku: [DPS App](https://dps-app-09bb6ce17a11.herokuapp.com/)
 
 The endpoint accepts a POST request with a JSON body:
 
