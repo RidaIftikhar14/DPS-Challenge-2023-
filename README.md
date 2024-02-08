@@ -55,8 +55,11 @@ The application uses the following packages
 - submit.py: a script to make the post to the endpoint.
 
 # Visualization
-![Trend of accidents by category](https://github.com/RidaIftikhar14/DPS-Challenge-2023-/assets/122225638/943e93cd-c92c-49ae-abea-f8e06aa4e1a1)
+![Number of accidents per accident type](https://github.com/RidaIftikhar14/DPS-Challenge-2023-/assets/122225638/6419c142-12bc-45d5-8e6c-a76894fbc2b0)
 
-![Number of accidents per category](https://github.com/RidaIftikhar14/DPS-Challenge-2023-/assets/122225638/b7ef9d38-1954-4bcd-be61-aa0d3e9104be)
+![Number of accidents per category](https://github.com/RidaIftikhar14/DPS-Challenge-2023-/assets/122225638/aac8de9f-c987-4125-8df0-c26d16ddb3b3)
 
-![Trend of accidents by category](https://github.com/RidaIftikhar14/DPS-Challenge-2023-/assets/122225638/ace7424e-f6c3-4b67-aa6b-d77ccc418169)
+![Trend of accidents by category](https://github.com/RidaIftikhar14/DPS-Challenge-2023-/assets/122225638/5b9cac74-426c-470b-85ef-c6909dd9a93a)
+
+![Heroku Application](https://github.com/RidaIftikhar14/DPS-Challenge-2023-/assets/122225638/810fdfba-9ae7-4515-9122-f04e69b247d3)
+
