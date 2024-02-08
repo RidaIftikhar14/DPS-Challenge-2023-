@@ -6,14 +6,14 @@ body = {
     "github": "https://github.com/RidaIftikhar14/DPS-Challenge-2023-.git",
     "email": "ridaiftikhar430@gmail.com",
     "url": "https://dps-app-09bb6ce17a11.herokuapp.com/",
-    "notes": " "  # This field is optional
+    "notes": " "  
 }
 
 headers = {
     'Content-Type': 'application/json'
 }
 
-POST request
+#POST request
 response = requests.post(url, json=body, headers=headers)
 
 # Get the status code and the response JSON
