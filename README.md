@@ -52,7 +52,7 @@ The application uses the following packages
 # Files
 - [Training Model.ipynb](https://github.com/RidaIftikhar14/DPS-Challenge-2023-/blob/main/Model%20Training.ipynb): The notebook contains all the steps performed to create and train the AI Model.
 - [app.py](https://github.com/RidaIftikhar14/DPS-Challenge-2023-/blob/main/app.py): An application which performs the forecasting and returns the result. 
-- submit.py: a script to make the post to the endpoint.
+- [submit.py](https://github.com/RidaIftikhar14/DPS-Challenge-2023-/blob/main/submit.py): a script to make the post to the endpoint.
 
 # Visualization
 ![Number of accidents per accident type](https://github.com/RidaIftikhar14/DPS-Challenge-2023-/assets/122225638/6419c142-12bc-45d5-8e6c-a76894fbc2b0)
