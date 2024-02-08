@@ -24,7 +24,7 @@ It return prediction in the following format:
 
 ```json
 {
-"prediction" : value
+"prediction" : Value
 }
 ```
 
